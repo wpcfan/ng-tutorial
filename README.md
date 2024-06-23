@@ -1,31 +1,27 @@
-# 适合于 Angular 开发的 devcontainer 配置
+# NgTutorial
 
-这是一个适合于 Angular 开发的 devcontainer 配置，可以在 vscode 中使用 devcontainer 插件直接启动一个开发环境。 已经包含 `Angular CLI` 和 `JSON Server` 等常用工具和服务。
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
-## 使用方法
+## Development server
 
-1. 安装 vscode 插件：Remote - Containers
-2. 使用 Github 的模板功能，创建一个新的仓库，即在本仓库的右上角点击 `Use this template`，然后在新仓库中 clone 代码。
-3. 打开 vscode，打开项目根目录
-4. 点击左下角的 `><` 图标，选择 `Reopen in Container`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## 配置说明
+## Code scaffolding
 
-- `Dockerfile`：用于构建 devcontainer 的 Dockerfile
-- `devcontainer.json`：devcontainer 配置文件
-- `docker-compose.yml`：用于启动数据库等服务
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## 服务说明
+## Build
 
-- `nodejs`：nodejs 环境
-- `typescript`：typescript 编译环境
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## 运行端口
+## Running unit tests
 
-- `4000`：Angular 服务
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## 注意事项
+## Running end-to-end tests
 
-- 请确保安装了 Docker Desktop
-- 请确保安装了 vscode 插件：Remote - Containers
-- 请避免端口冲突，如有冲突请修改 `docker-compose.yml` 中的端口映射，本项目默认暴露端口为 `4000`
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
